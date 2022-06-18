@@ -1,5 +1,5 @@
 let menuContainer = document.querySelector(".container");
-let menu = document.querySelector(".menu");
+let mobileMenuContainer = document.querySelector(".container-mobile");
 
 function dropDownMenu(menuContainer) {
   menuContainer.addEventListener("click", () => {
@@ -7,4 +7,12 @@ function dropDownMenu(menuContainer) {
   });
 }
 
+function mobileMenu(menu) {
+  menu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+}
+
 dropDownMenu(menuContainer);
+
+mobileMenu(mobileMenuContainer);
