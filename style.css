@@ -73,7 +73,7 @@ nav > h5 {
   margin: 0;
 }
 
-.fa-bars:hover {
+.container-mobile > nav:hover {
   cursor: pointer;
 }
 
@@ -136,4 +136,34 @@ nav > h5 {
 }
 .container-mobile.none-active .menu-mobile {
   animation: shrink 400ms ease-in-out 0s 1 forwards;
+}
+img {
+  width: 400px;
+  height: 300px;
+  border-radius: 4em;
+  bottom: 60%;
+  position: absolute;
+  right: 10%;
+}
+
+.container-carousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+.carousel {
+  padding: 20px;
+  display: flex;
+}
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dog1 {
+  z-index: 1;
 }
