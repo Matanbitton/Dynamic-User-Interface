@@ -141,9 +141,25 @@ img {
   width: 400px;
   height: 300px;
   border-radius: 4em;
-  bottom: 60%;
+}
+.carousel-item {
   position: absolute;
-  right: 10%;
+  bottom: 50%;
+  right: 9%;
+  opacity: 0;
+}
+.carousel-item[data-active] {
+  animation: sweep-in 600ms 0s alternate ease-in-out;
+  opacity: 1;
+}
+
+@keyframes sweep-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container-carousel {
@@ -156,14 +172,17 @@ img {
 }
 .carousel {
   padding: 20px;
-  display: flex;
 }
 .buttons-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
-
-.dog1 {
-  z-index: 1;
+.button {
+  background-color: #333333;
+  color: white;
+  border-radius: 1em;
+  padding: 5px 15px 5px 15px;
+  font-size: 20px;
 }
